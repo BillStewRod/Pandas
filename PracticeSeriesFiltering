@@ -1,0 +1,133 @@
+### Take a deep look at the dataset and Pandas series we are working with
+
+# Import the Pandas library
+import pandas as pd
+
+# Read in the data from the CSV file
+data = pd.read_csv('leadersdata.csv')
+data
+
+data.columns
+
+# Setting Player's Name as the index
+data.set_index('Player', inplace=True)
+
+# Creating pandas series for each column
+innings = data['I']
+runs = data['R']
+balls = data['B']
+outs = data['Outs']
+batting_average = data['Avg']
+strike_rate = data['SR']
+highest_score = data['HS']
+number_of_fours = data['4s']
+number_of_sixes = data['6s']
+number_of_fifties = data['50']
+number_of_hundreds = data['100']
+
+
+# Printing the first 5 rows of each series
+print("Innings:\n", innings.head())
+print("Runs:\n", runs.head())
+print("Balls:\n", balls.head())
+print("Outs:\n", outs.head())
+print("Batting Average:\n", batting_average.head())
+print("Strike Rate:\n", strike_rate.head())
+print("Highest Score:\n", highest_score.head())
+print("Number of Fours:\n", number_of_fours.head())
+print("Number of Sixes:\n", number_of_sixes.head())
+print("Number of Fifties:\n", number_of_fifties.head())
+print("Number of Hundreds:\n", number_of_hundreds.head())
+
+### Activities
+
+##### 1. How many players have a batting average greater than 30 in the `batting_average` series
+
+# try your code here
+
+##### 2. What is the maximum number of runs scored by a player in the `runs` series
+
+# try your code here
+
+##### 3. Name the player with maximum runs
+
+# try your code here
+
+##### 4. Name the player who played least number of balls
+
+# try your code here
+
+##### 5. How many players have played more than 500 balls in the `balls` series
+
+# try your code here
+
+##### 6. What is the mean value of the `batting_average` series
+
+# try your code here
+
+##### 7. How many players have a strike rate not equal to 70 in the `strike_rate` series 
+
+# try your code here
+
+##### 8. What is the minimum number of innings played by a player in the `innings` series
+
+# try your code here
+
+##### 9. How many players have a batting average greater than 50 in the `batting_average` series
+
+# try your code here
+
+##### 10. How many players have a batting average between 20 and 30 (inclusive) in the `batting_average` series
+
+# try your code here
+
+##### 11. Calculating the Average Balls Faced by a Player
+
+# try your code here
+
+##### 12. How many players have a strike rate greater than 120 in the `strike_rate` series
+
+# try your code here
+
+##### 13. Provide the names of the top three players from the `strike_rate` series
+
+# try your code here
+
+##### 14. Sum of Maximums from `number_of_fours` and `number_of_sixes` Series
+
+# try your code here
+
+##### 15. How many players have a batting average below 10 in the `batting_average` series
+
+# try your code here
+
+##### 16. Name the player who hit maximum sixes
+
+# try your code here
+
+##### 17. How many players have a strike rate between 80 and 90 (inclusive) in the `strike_rate` series
+
+# try your code here
+
+##### 18. What is the total number of runs scored by all players in the `runs` series
+
+# try your code here
+
+##### 19. What is the range (difference between the maximum and minimum values) of the `number_of_fifties` series
+
+# try your code here
+
+How many players have a strike rate below 60 in the `strike_rate` seriesHow many players have a strike rate below 60?
+
+# try your code here
+
+##### 21. Calculating the Mean Number of Boundaries (Fours + Sixes) Hit by a Player
+
+# try your code here
+
+##### 22. Players with highest score in `highest_score` series
+
+# try your code here
+top_five_scores = ...
+
+### The End!
