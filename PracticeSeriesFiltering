@@ -43,91 +43,92 @@ print("Number of Hundreds:\n", number_of_hundreds.head())
 
 ##### 1. How many players have a batting average greater than 30 in the `batting_average` series
 
-# try your code here
+len(batting_average[batting_average > 30])
 
 ##### 2. What is the maximum number of runs scored by a player in the `runs` series
 
-# try your code here
+runs.max()
 
 ##### 3. Name the player with maximum runs
 
-# try your code here
+runs[runs == runs.max()]
 
 ##### 4. Name the player who played least number of balls
 
-# try your code here
+balls[balls == balls.min()]
 
 ##### 5. How many players have played more than 500 balls in the `balls` series
 
-# try your code here
+len(balls[balls > 500])
 
 ##### 6. What is the mean value of the `batting_average` series
 
-# try your code here
+batting_average.mean()
 
 ##### 7. How many players have a strike rate not equal to 70 in the `strike_rate` series 
 
-# try your code here
+len(strike_rate[strike_rate!=70])
 
 ##### 8. What is the minimum number of innings played by a player in the `innings` series
 
-# try your code here
+innings.min()
 
 ##### 9. How many players have a batting average greater than 50 in the `batting_average` series
 
-# try your code here
+len(batting_average[batting_average > 50])
 
 ##### 10. How many players have a batting average between 20 and 30 (inclusive) in the `batting_average` series
 
-# try your code here
+len(batting_average[(batting_average >= 20) & (batting_average <= 30)])
 
 ##### 11. Calculating the Average Balls Faced by a Player
 
-# try your code here
+balls.mean()
 
 ##### 12. How many players have a strike rate greater than 120 in the `strike_rate` series
 
-# try your code here
+len(strike_rate[strike_rate > 120])
 
 ##### 13. Provide the names of the top three players from the `strike_rate` series
 
-# try your code here
+strike_rate.sort_values(ascending = False).head(3)
 
 ##### 14. Sum of Maximums from `number_of_fours` and `number_of_sixes` Series
 
-# try your code here
+number_of_fours.max() + number_of_sixes.max()
 
 ##### 15. How many players have a batting average below 10 in the `batting_average` series
 
-# try your code here
+len(batting_average[batting_average < 10])
 
 ##### 16. Name the player who hit maximum sixes
 
-# try your code here
+number_of_sixes[number_of_sixes == number_of_sixes.max()]
 
 ##### 17. How many players have a strike rate between 80 and 90 (inclusive) in the `strike_rate` series
 
-# try your code here
+len(strike_rate[(strike_rate >= 80) & (strike_rate <= 90)])
 
 ##### 18. What is the total number of runs scored by all players in the `runs` series
 
-# try your code here
+runs.sum()
 
 ##### 19. What is the range (difference between the maximum and minimum values) of the `number_of_fifties` series
 
-# try your code here
+number_of_fifties.max() - number_of_fifties.min()
 
-How many players have a strike rate below 60 in the `strike_rate` seriesHow many players have a strike rate below 60?
+How many players have a strike rate below 60 in the `strike_rate` series?
 
-# try your code here
+len(strike_rate[strike_rate < 60])
 
 ##### 21. Calculating the Mean Number of Boundaries (Fours + Sixes) Hit by a Player
 
-# try your code here
+(number_of_fours + number_of_sixes).mean()
 
 ##### 22. Players with highest score in `highest_score` series
 
-# try your code here
-top_five_scores = ...
+sorted_scores = highest_score.sort_values(ascending=False)
+top_five_scores = sorted_scores.head(5)
+print(top_five_scores)
 
 ### The End!
